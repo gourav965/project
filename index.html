@@ -1,0 +1,459 @@
+<html>
+	<head>
+		<title>project</title>
+		<style type="text/css">
+			body{
+				margin:0;
+				padding:0;
+							   
+			    }
+			/*#root{
+			     	text-align:center;
+				font-size:35px;
+			    }*/
+				
+			 #logo{       
+					width:1535px;
+					height:900px;
+					background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('banner.png');
+					background-position:center;
+					background-size:cover;
+					
+					
+					
+										
+				  }
+			#logo img{
+					width:200px;
+					padding:50px 50px;
+				   }
+			#nav {
+					
+					list-style:none;
+					display:flex;
+					float:right;
+					padding:40px 15px;
+															
+				  }
+			#nav ul{
+					
+					list-style:none;
+					display:flex;
+					float:right;
+										
+				  }
+
+			#nav ul li{
+						margin:15px;
+						font-size:20px;
+						
+												
+					}
+			 #nav ul li a:link, #nav ul li a:visited{
+									color:white;										
+									text-decoration:none;
+									padding:5px 1px;
+									text-align:right;
+									
+									}
+			#nav ul li::after{
+							content:'';
+							width:0%;
+							height:2px;
+							background:#f44336;
+							display:block;
+							margin:auto;
+							transition:0.5s;
+							
+					      }
+			#nav ul li:hover::after{
+							width:70%;
+						
+					}
+			#titlearea{
+					width:90%;
+					color:white;
+					position:absolute;
+					top:50%;
+					left:50%;
+					transform:translate(-50%,-50%);
+					text-align:center;
+					margin:100px 50px;
+				}
+			#titlearea h1{
+					font-size:50px;
+					margin:20px;
+				}
+			#titlearea p{
+					margin: 20px;	
+					font-size:20px;
+				  }
+			#titlearea a{
+					display:inline-block;
+					text-decoration:none;
+					color:white;
+					border:5px solid;
+					padding:15px 15px;
+					font-size:30px;
+					background:transparent;
+					position:relative;
+					margin: 20px;
+										
+				  }
+			#titlearea a:hover{
+						border:1px solid #5E8DDF;
+						background:#5E8DDF;
+						transition:1s;
+					}
+			#menuarea{	
+					
+					width:1535px;
+					height:700px;
+					background:maroon;
+					text-align:center;
+					padding-top:25px;
+					background-image:url('library.jpg');
+					background-repeat:no-repeat;
+					background-attachment:fixed;
+					background-size:cover;
+
+				}
+			#menuarea h1{
+					font-size:50px;
+					font-weight:900;
+					
+					
+				   }
+			#academic{
+					display:flex;
+					justify-content:center;
+					
+					
+				}
+			#academic1{	
+					width:300px;
+					height:300px;
+					background:pink;
+					margin:20px;
+					float:left;
+					position:relate;
+				}
+			#academic1 h2{
+					margin-top:20px;
+					font-size:20px;
+					
+				    }
+			#academic1:hover{
+						transition:1s;
+						transform:scale(1.1);
+				        }
+			#academic2{	
+					width:300px;
+					height:300px;
+					background:pink;
+					margin:20px;
+					float:left;
+					position:relate;
+					
+					
+				  }
+			#academic2 h2{
+					margin-top:20px;
+					font-size:20px;
+					
+				    }
+			#academic2:hover{
+						transition:1s;
+						transform:scale(1.1);
+				        }
+			#academic3{	
+					width:300px;
+					height:300px;
+					background:pink;
+					margin:20px;
+					float:left;
+					position:relative;
+
+				  }
+			#academic3 h2{
+					margin-top:20px;
+					font-size:20px;
+					
+				    }
+			#academic3:hover{
+						transition:1s;
+						transform:scale(1.1);
+				        }
+			#academic4{	
+					width:300px;
+					height:300px;
+					background:pink;
+					margin:20px;
+					float:left;
+					position:relate;
+
+				  }
+			#academic4 h2{
+					margin-top:20px;
+					font-size:20px;
+					
+				    }
+			#academic4:hover{
+						transition:1s;
+						transform:scale(1.1);
+				        }
+																																			
+			#boxarea{
+					width:1535px;
+					height:850px;
+					background:#fff;
+					text-align:center;
+					padding-top:50px;
+						
+				}
+			#boxarea h1{
+					font-size:50px;
+					font-weight:900;
+					
+				  }
+			#boxarea p{
+					color:#777;
+					font-size:20px;
+					font-weight:500;
+					padding:5px;
+					
+				}
+			#course{
+					margin-top:50px;
+					display:flex;	
+				}
+			#course1{
+					
+					width:400px;
+					height:500px;
+					background:#FFF3F3;
+					border-radius:50px;
+					
+					transition:0.5s;
+					margin-left:120px;							
+				}
+			#course1 h2{
+					text-align:center;
+					font-size:50px;
+					margin:25px 25px;
+				  }
+			#course1:hover{
+					box-shadow:0 0 30px 0 rgba(0,0,0,0.4);	
+					}
+			#course2{
+					
+					width:400px;
+					height:500px;
+					background:#FFF3F3;
+					border-radius:50px;
+					
+					transition:0.5s;
+					margin-left:50px;
+											
+				}			
+							
+			#course2 h2{
+					text-align:center;
+					font-size:50px;
+					margin:25px 25px;
+				  }
+			#course2:hover{
+					box-shadow:0 0 20px 0 rgba(0,0,0,0.4);	
+					}
+			#course3{
+					
+					width:400px;
+					height:500px;
+					background:#FFF3F3;
+					border-radius:50px;
+					margin-bottom:50px;
+					
+					transition:0.5s;
+					margin-left:50px;						
+				}			
+							
+			#course3 h2{
+					text-align:center;
+					font-size:50px;
+					margin:25px 25px;
+				  }
+			#course3:hover{
+					box-shadow:0 0 20px 0 rgba(0,0,0,0.4);	
+					}
+			
+			
+						
+		
+			#almuni{
+				}
+			#footer{	
+					width:1535px;
+					height:600px;
+					background:#22386D;
+					display:flex;	
+				}
+			#f1{
+				width:300px;
+				height:600px;
+				color:white;
+				
+			  }
+			#f1 h3{
+				padding-top:50px;
+				padding-left:50px;
+				font-size:30px;
+				
+
+			     }
+			#f1 h4{
+				
+				padding-left:50px;
+				font-size:20px;
+				
+				
+			     }
+			#f1 img{
+					width:40px;
+					height:40px;
+					
+				}
+			#f2{
+				width:500px;
+				height:600px;
+				color:white;
+				
+			   }
+			#f2 p{
+				padding-top:60px;
+				padding-left:50px;
+				font-size:25px;
+
+			  }
+			#f2 img{
+					width:20px;
+					height:20px;
+				}
+			#f3{
+				width:700px;
+				height:600px;
+			   }
+			#f3 h3{
+				text-align:center;
+				color:white;
+				font-size:50px;	
+			    }
+			#f3 iframe{
+					
+					margin-left:70px;
+
+				}
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<div id="root">
+			<div id="logo">
+				<a href="index.html"><img src="logo.png"></a>
+				<div id="nav">
+					<ul>
+						<li><a href="#">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="#">COURSE</a></li>
+						<li><a href="blog.html">BLOG</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+						
+					</ul>
+
+				</div>
+					
+
+				<div id="titlearea">
+						<h1>World's biggest university</h1>
+						<p>We’re a leading research university with a heart. Founded in the decade that the U.S. 													Constitution was signed, we’re the nation’s oldest Catholic and Jesuit university.<br>Today 													we’re a forward-looking, diverse community devoted to social justice, restless inquiry and 													respect for each person’s individual needs and talents.
+						</p>
+						<a href="">Visit us to know more</a>
+				</div>
+				
+			</div>
+				
+				
+				<div id="menuarea">
+					
+					<h1>ACADEMIC UNITS</h1>	
+					<div id="academic">
+						<div id="academic1">
+							<img src="cse.jpeg" width="300px" height="300px">
+							<h2>COMPUTER SCIENCE ENGINEERING</H2>
+
+						</div>
+						<div id="academic2">
+							<img src="ele.jpeg" width="300px" height="300px">
+							<h2>ELECTRICAL ENGINEERING</h2>
+						</div>
+						<div id="academic3">
+							<img src="mec.jpeg" width="300px" height="300px">
+							<h2>MECHANICAL ENGINEERING</h2>
+						</div>
+						<div id="academic4">
+							<img src="met.jpg" width="300px" height="300px">
+							<h2>METALLURGICAL ENGINEERING</h2>
+						</div>
+					</div>
+				
+
+				  
+				</div>
+					
+			<div id="boxarea">
+						
+					<h1>Courses We Offer</h1>
+					<p>Explore the intersection of technology and society. Learn about environmental justice. Take the 												famous Problem of God course. Our innovative<br> courses inspire and invite you to help solve 												some of today’s most pressing local, national and global issues.</p>
+					<div id="course">
+						<div id="course1">
+							<h2>Undergraduate Programs</h2>
+							<p>For decades, Eduford College has improved the health of our communities, one graduate at a time. The JoAnn McGrath School of 								Nursing and Health Professions, as one of the largest nursing schools in Wisconsin, offers a wide array of fully accredited 								nursing programs, guaranteed clinical placements and a technology-rich Center for Clinical Education.</p>
+						</div>
+						<div id="course2">
+							<h2>Graduate Programs</h2>
+							<p>Building on our strong roots in leadership, health care and education, Eduford is proud to offer an array of coed graduate 								programs for women and men who are ready to advance their careers and grow as leaders. The Eduford College Community Psychology 							Master's program will help you to meet your goals of becoming a Licensed Professional Counselor.</p>
+						</div>
+						<div id="course3">
+							<h2>Post Graduation</h2>
+							<p>The Eduford, as one of the largest nursing schools in Wisconsin, offers a wide array of fully accredited nursing programs, 									guaranteed clinical placements and a technology-rich Center for Clinical Education. The Eduford College Community Psychology 								Master's program will help you to meet your goals of becoming a Licensed Professional Counselor.</p>
+						</div>
+					</div>
+			</div>
+				
+			<div id="almuni">
+						<img src="a.png" width="1535px" height="400px" >
+			</div>
+			<div id="footer">
+				<div id="f1">
+					<h3>Eduford University Marburg</h3>
+					<h4>Biegenstrabe 10 <br>35037 marburg<br>University park, PA 16802<hr><br><br><br><br><br><br><br><img src="facebook.png"> &nbsp  <img 								src="twitter.png"> &nbsp  <img src="telephone.png"> &nbsp  <img src="social.png"></h4>	
+				</div>
+				<div id="f2">
+					<p><img src="phone-call.png"> +49642128-20 <br><img src="phone-call.png"> Studifon+49642128-22222<br><img src="telephone.png"> +49642128-22500<br>					<img src="mail.png"> <u>info@uni-marburg.de</u><br><br><br><br><br><br><br><br><br><u>Aktuelles</u>&nbsp &nbsp<u>Startseite</u>&nbsp &nbsp<u>						Impressum</u></p>
+						
+				</div>
+				
+				<div id="f3">
+					<h3><u>LOCATION</u></h3>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9816.056645354398!2d8.766528764686996!3d50.809336745184616!2m3!1f0!2f0!3f0!3m2!					1i1024!2i768!4f13.1!3m3!1m2!1s0x47bc8832840f01eb%3A0x65c1a9ab47eb4f7a!2sPhilipps-University%20Marburg!5e0!3m2!1sen!2sin!4v1726570652099!5m2!1sen!					2sin" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			
+				</div>
+				
+				
+					
+			</div>
+		</div>
+		
+	</body>
+</html>
